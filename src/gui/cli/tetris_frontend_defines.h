@@ -1,0 +1,32 @@
+#ifndef __TETRIS_FRONTEND_DEFINES_H__
+#define __TETRIS_FRONTEND_DEFINES_H__
+#include "objects.h"
+
+#define S21_ESCAPE 27
+#define S21_ENTER_KEY 10
+#define S21_SPACE_KEY ' '
+#define S21_PAUSE_KEY 'p'
+#define S21_START_KEY 'y'
+
+#define KEY_DOWN_VIM_PACK 'j'
+#define KEY_UP_VIM_PACK 'k'
+#define KEY_LEFT_VIM_PACK 'h'
+#define KEY_RIGHT_VIM_PACK 'l'
+
+#define INFO_COLUMNS 10
+
+#define START_BOARD_CORD_X 2
+#define START_BOARD_CORD_Y 2
+
+#define START_INFO_FIGURE_COORD_X 16
+#define START_INFO_FIGURE_COORD_Y 15
+#define END_INFO_FIGURE_COORD_X \
+  (START_INFO_FIGURE_COORD_X + INFO_FIGURE_BOARD_COLS)
+#define END_INFO_FIGURE_COORD_Y \
+  (START_INFO_FIGURE_COORD_Y + INFO_FIGURE_BOARD_ROWS)
+
+#define FIGURE_CHAR '#'
+#define EMPTY_CHAR ' '
+#define BOARD_CHAR '*'
+
+#endif  // __TETRIS_FRONTEND_DEFINES_H__
